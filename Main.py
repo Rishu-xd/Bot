@@ -5,13 +5,13 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 API_TOKEN = 'your token'
 bot = telebot.TeleBot(API_TOKEN)
 
-# To store user data
+
 user_data = {}
 
-# To track user actions
+
 user_states = {}
 
-# Start command handler
+
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     chat_id = message.chat.id
